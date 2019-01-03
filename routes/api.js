@@ -17,8 +17,10 @@ router.put('/ninjas/:id', function(req, res){
 });
 
 // delete a ninja from the db
-router.delete('/ninjas/:id', function(req, res){
+router.delete('/ninjas/:id' , function(req, res){
     res.send({type: 'DELETE'});
-});
+}); 
 
 module.exports = router;
+
+//browser uses get requests by default
